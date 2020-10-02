@@ -1,0 +1,47 @@
+{
+  "adam_epsilon": 0.00015,
+  "buffer_size": 400000,
+  "compress_observations": false,
+  "double_q": true,
+  "dueling": true,
+  "env": "butterfly",
+  "exploration_config": {
+    "epsilon_timesteps": 200000,
+    "final_epsilon": 0.01
+  },
+  "final_prioritized_replay_beta": 1.0,
+  "gamma": 0.99,
+  "learning_starts": 10000,
+  "log_level": "ERROR",
+  "lr": 0.0001,
+  "multiagent": {
+    "policies": {
+      "policy_0": [
+        null,
+        "Box(0.0, 1.0, (1024,), float32)",
+        "Discrete(3)",
+        {
+          "gamma": 0.99,
+          "model": {
+            "custom_model": "MLPModelV2"
+          }
+        }
+      ]
+    },
+    "policy_mapping_fn": "<function <lambda> at 0x7fc16cb26cb0>"
+  },
+  "n_step": 3,
+  "noisy": false,
+  "num_atoms": 1,
+  "num_envs_per_worker": 4,
+  "num_gpus": 1,
+  "num_workers": 12,
+  "prioritized_replay": true,
+  "prioritized_replay_alpha": 0.5,
+  "prioritized_replay_beta": 0.4,
+  "prioritized_replay_beta_annealing_timesteps": 2000000,
+  "rollout_fragment_length": 32,
+  "target_network_update_freq": 10000,
+  "timesteps_per_iteration": 15000,
+  "train_batch_size": 512
+}

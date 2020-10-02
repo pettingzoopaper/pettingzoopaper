@@ -1,0 +1,5 @@
+ray[rllib]
+pettingzoo[butterfly] >= 1.3.1
+matplotlib
+pandas
+supersuit
